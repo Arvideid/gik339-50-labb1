@@ -13,7 +13,26 @@
     
     <main>
         <div class="container">
+            <form class="input-form">
+                <div class="form-group">
+                    <label for="color">Color:</label>
+                    <input type="text" id="color" name="color" class="textfield">
+                </div>
 
+                <div class="form-group">
+                    <label for="content">Content:</label>
+                    <input type="text" id="content" name="content" class="textfield">
+                </div>
+
+                <div class="form-group">
+                    <label for="divStyle">Style:</label>
+                    <input type="checkbox" id="divStyle" name="divStyle" class="checkbox">
+                </div>
+
+                <button type="button" id="updateButton" class="btn">Update</button>
+            </form>
+
+            <div id="outputDiv" class="output-div"></div>
         </div>
     </main>
 
