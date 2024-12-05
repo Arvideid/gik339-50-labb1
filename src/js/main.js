@@ -57,7 +57,7 @@ function createOutputDiv(color, content) {
 
 // Add Div button event listener
 addBtn.addEventListener('click', () => {
-    const color = colorText.value; // Use text input value instead of color picker
+    const color = colorText.value;
     const content = contentInput.value;
     const newDiv = createOutputDiv(color, content);
     outputContainer.appendChild(newDiv);
@@ -76,10 +76,7 @@ updateBtn.addEventListener('click', () => {
 updateStyleBtn.addEventListener('click', () => {
     if (outputDivs.length > 0) {
         const lastDiv = outputDivs[outputDivs.length - 1];
-        lastDiv.style.backgroundColor = colorText.value; // Use text input value
+        lastDiv.style.backgroundColor = colorText.value;
         lastDiv.innerHTML = contentInput.value;
     }
 });
-
-// Initialize with empty array
-outputDivs = [];
