@@ -1,13 +1,7 @@
 # AI-användningsdokumentation
 
-## Översikt
-Detta dokument loggar användningen av AI-verktyg under projektets utveckling. De primära AI-verktygen som användes var:
-- Claude 3.5 Sonnet
-
-## Interaktionslogg
-
-### 2024-03-XX: CSS-styling förbättring
-**Fråga**: "can you improve our css styling? no animations, polished styling. use a responsive vertical layout"
+### CSS-styling förbättring
+**Prompt**: "can you improve our css styling? no animations, polished styling. use a responsive vertical layout"
 **AI-verktyg**: Claude 3.5 Sonnet
 
 ![CSS-styling förfrågan](./images/cssstyling.png)
@@ -20,8 +14,8 @@ Detta dokument loggar användningen av AI-verktyg under projektets utveckling. D
 
 **Påverkad kod**: `src/css/styles.css`
 
-### 2024-03-XX: Svenska JavaScript-kommentarer
-**Fråga**: "kan du lägga till kommentarer i javascript koden på svenska"
+### Svenska JavaScript-kommentarer
+**Prompt**: "kan du lägga till kommentarer i javascript koden på svenska"
 **AI-verktyg**: Claude 3.5 Sonnet
 
 ![JavaScript-kommentarer förfrågan](./images/jscomments.png)
@@ -33,19 +27,16 @@ Detta dokument loggar användningen av AI-verktyg under projektets utveckling. D
 
 **Påverkad kod**: `src/js/main.js`
 
-## Riktlinjer för dokumentation
-Vid tillägg av nya poster:
-1. Inkludera datum
-2. Specificera vilket AI-verktyg som användes
-3. Dokumentera frågan/prompten
-4. Sammanfatta AI:ns svar
-5. Notera vilka kodändringar som resulterade från interaktionen
+### Dubbel-kontroll av Labbinstruktioner
+**Prompt**: "can you read the instructions in the pdf and double check if we are following all instructions"
+**AI-verktyg**: Claude 3.5 Sonnet
 
-## Påverkan på utvecklingen
-AI-verktygen har varit särskilt hjälpsamma för:
-- Initial strukturering av HTML enligt specifikationerna
-- Förbättring av CSS-styling med fokus på användbarhet och responsivitet
-- Implementering av tydliga svenska kommentarer i JavaScript-koden
-- Effektivisering av utvecklingsprocessen genom snabb feedback och kodförslag
+![Dubbel-kontroll förfrågan](./images/doublecheckinstructions.png)
 
-Alla AI-genererade förslag har granskats och anpassats manuellt för att säkerställa kvalitet och korrekthet. 
+**Sammanfattning av svar**: AI:n verifierade att koden följer labbinstruktionerna genom att kontrollera:
+- HTML-struktur och element-attribut
+- JavaScript-funktionalitet och eventhantering
+- Användning av olika DOM-metoder
+- Korrekt implementation av alla uppgifter
+
+**Påverkad kod**: Hela kodbasen granskades

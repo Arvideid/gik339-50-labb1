@@ -2,11 +2,12 @@
 const styleCheckbox = document.querySelector('#divStyle');
 const textFields = document.getElementsByClassName('textfield');
 const updateBtn = document.getElementById('updateButton');
-const outputElement = document.querySelector('.output-div');
+const outputElement = document.getElementsByClassName('output-div')[0];
 
 // Hantera ändringar i textfälten
 function handleInputChange(e) {
     console.log('Event triggered by:', e.target);
+    console.log('Input name:', e.target.name);
 
     const inputName = e.target.name;
     

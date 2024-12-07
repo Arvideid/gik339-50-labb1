@@ -1,0 +1,176 @@
+
+
+GIK339 - LABB 1
+SKAPA OCH �NDRA HTML VIA JAVASCRIPT
+F�r 4hp i kursen Dynamiska Webbapplikationer ska tv� labbar och ett onlineprov utf�ras. Detta �r den f�rsta labben. Den utf�rs i labbgrupper, enligt de som finns i kursrummet (markerade Labbgrupp XX).
+L�s igenom instruktioner f�r f�rberedelser, uppgifter och inl�mning noggrant och tveka inte att h�ra av er till mie@du.se om det �r n�gra fr�gor.
+Lycka till!
+
+
+Inneh�ll
+F�rberedelser	3
+Uppgifter	4
+Notering r�rande generativ AI (GAI)	4
+Uppgift 1 Skapa HTML-fil	4
+Uppgift 2 Skapa HTML-kod (valfri styling)	4
+Uppgift 3 - Skapa och l�nka script-fil	6
+Uppgift 4 - Skapa variabler	6
+Uppgift 5 - Skapa en f�rdefinierad funktion	7
+Uppgift 6 Koppla eventlyssnare	7
+Inl�mning	9
+Kod	9
+Loggar	9
+Video	9
+
+
+
+F�rberedelser
+1. Skapa ett lokalt repository p� n�gon av er dator, exempelvis enligt instruktioner i
+Git, GitHub, & GitHub Desktop for beginners.
+2. D�p det till gik339-[gruppnummer]-labb1.
+a. Notera: Ta inte med punkten ovan. Det blir fel p� repositoryt om den slutar med en punkt.
+b. Om ni f�ljer videon ovan kommer detta skapa en mapp med samma namn p� en den position som st�r angivet i f�ltet Local path i GitHub for Desktop.
+3. �ppna mappen f�r repositoryt i VS Code. S�kv�gen till mappen finns angivet i f�ltet Local path i GitHub for Desktop.
+4. Utf�r labben enligt instruktioner
+a. OBS! n�r ni gjort f�r�ndringar och vill publicera ert repository till GitHub, se till att inst�llningen Keep this code private inte �r markerad.
+5. Om gruppen vill arbeta fr�n olika datorer, se till att b�da jobbar utifr�n samma repository p� GitHub.
+a. Allts�, person 2 ska inte skapa ett nytt repository, utan h�mta det befintliga p� GitHub och ladda ner det lokalt till sin dator.
+b. Det ska allts� bara finnas ett (1) repository som ni ska arbeta mot, och vars l�nk ni ska l�mna in enligt avsnittet Inl�mning.
+
+
+Uppgifter
+Nedan f�ljer de uppgifter som ni ska ha utf�rt f�r att f� godk�nt p� labben. Uppgifterna �r minimum, vilket inneb�r att ni f�r labba runt med egna till�gg om ni vill, s� l�nge instruktionerna f�ljs. Instruktionerna i uppgifterna kanske inte alltid �r helt logiska, men det finns en po�ng med dem. Vid vissa tillf�llen ska ni hitta och motivera egna l�sningar, vid andra tillf�llen ska ni anv�nda er av n�got specifikt, t.ex. ett specifikt event.
+Jag h�nvisar ibland till de f�rel�sningar och lektioner som behandlar ett givet omr�de som ni ska arbeta med. Alla f�rel�snings- och lektionsfiler finns h�r. Ni beh�ver titta i mapparna f�r respektive vecka f�r att hitta det h�nvisade materialet. L�nkar till material finns ocks� i kursrummet. Notera att det publicerade f�rel�sningsmaterialet kan variera fr�n den presentation du s�g "live", s� om du tittar i egna anteckningar utifr�n materialet kanske inte h�nvisningarna st�mmer.
+Exempel p� hur webbsidan ska fungera n�r alla uppgifter �r slutf�rda finns i denna video:
+https://canvas.du.se/courses/1811/files/171399.
+Notering r�rande generativ AI (GAI)
+Vid utf�rande av uppgifterna �r det till�tet anv�nda er av GAI f�r att f� id�er, eller f�rtydliga och f�rb�ttra redan skriven kod. Den f�rdiga koden m�ste dock vara er egen och ni m�ste kunna visa att ni f�rst�r och kan kvalitetss�kra genererad kod.
+Om ni har anv�nt generativ AI beh�ver ni visa vilka delar som ni har f�tt st�d i att skapa och f�rklara hur processen som anv�ndes f�r att generera inneh�llet. Vidare detaljer r�rande hur detta ska redovisas finns i avsnittet Inl�mning.
+Uppgift 1 Skapa HTML-fil
+Skapa filen index.html och s�tt upp en grundl�ggande HTML-struktur.
+
+
+Uppgift 2 Skapa HTML-kod (valfri styling)
+Skapa ett antal HTML-element f�r vidare anv�ndning i labben. Ni f�r styla dessa element hur du vill. Skriv g�rna gruppnummer i exempelvis title-elementet eller n�got annat element p� er site.
+
+
+Det kan se ut ungef�r s�h�r:
+
+Figur 1 - Exempel p� utseende p� er webbsida
+
+Detaljer r�rande vad som minst ska finnas p� webbsidan f�ljer:
+Tre input-element med tillh�rande label-element
+1. Input-element 1: Attributet type ska vara "text", attributen name och id ska vara
+"color" och attributet class ska vara "textfield".
+2. Input-element 2: Attributet type ska vara "text", attributen name och id ska var
+"content", " och attributet class ska vara "textfield".
+3. Input-element 3: Attributet type ska vara "checkbox", attributen name och id ska
+vara "divStyle", attributet class ska vara "checkbox".
+
+Ett button-element
+Ni f�r best�mma vad det ska st� p� knappen, hur den ska se ut och eventuella andra attribut. Se till s� att ni senare ska kunna h�mta upp knappen via JavaScript, exempelvis genom att ge elementet en klass eller ett id.
+Ett div-element
+Se till s� att ni senare ska kunna h�mta upp elementet via JavaScript, exempelvis genom att ge elementet en klass eller ett id. Elementet ska inte inneh�lla n�gonting (det st�r dock text i exemplet ovan, men det �r bara f�r att det ska synas att elementet finns).
+
+
+Uppgift 3 - Skapa och l�nka script-fil
+Se till att ditt HTML-dokument f�r tillg�ng till en extern scriptfil. Skapa en scriptfil och l�nka den i ditt HTML-dokument via ett script-element. Se avsnitt Webbl�saren i F�rel�sning 1 f�r olika s�tt att l�sa in script-filer till HTML-dokumentet.
+Resterande uppgifter av labben ska i huvudsak utf�ras i script-filen som skapas i detta steg.
+Uppgift 4 - Skapa variabler
+I script-filen som skapades i f�reg�ende steg, ska ett antal variabler skapas f�r att h�lla olika HTMLElement-objekt.
+1. Variabel 1: Checkboxen
+* H�mta checkboxen (<input type="checkbox">) p�.
+* Anv�nd valfri DOM-funktion[1] f�r att h�mta upp checkboxen.
+i. Anv�nd helst en DOM-funktion som ni inte anv�nt i vid h�mtning av n�got annat HTML-element.
+* Lagra den i en variabel av l�mplig typ (var, let eller const). Ge variabeln valfritt namn.
+2. Variabel 2: Alla textf�lt
+* H�mta alla textf�lt (<input type="text">) som en enda samling av
+element genom att s�ka fram dem via deras klassnamn ("textfield").
+* Anv�nd valfri DOM-funktion f�r att h�mta upp samlingen av textf�lt.
+i. Anv�nd helst en DOM-funktion som ni inte anv�nt i vid h�mtning av n�got annat HTML-element.
+* Lagra samlingen i en variabel av l�mplig typ (var, let eller const). Ge variabeln valfritt namn.
+3. Variabel 3: Knappen
+* H�mta knappen (<button>) med hj�lp av valfri DOM-funktion.
+i. Anv�nd helst en DOM-funktion som ni inte anv�nt i vid h�mtning av n�got annat HTML-element.
+* Lagra knappen i en variabel av l�mplig typ (var, let eller const). Ge variabeln valfritt namn.
+4. Variabel 4: Div-elementet
+* H�mta div-elementet (<div>) med hj�lp av valfri DOM-funktion.
+i. Anv�nd helst en DOM-funktion som ni inte anv�nt i vid h�mtning av n�got annat HTML-element.
+
+
+
+1 Med DOM-funktion h�r, och vid efterf�ljande omn�mnanden, avses de olika funktioner som g�s igenom i avsnitten Hitta element och Navigera bland element i F�rel�sning 2, exempelvis getElementById().
+
+
+* Lagra elementet i en variabel av l�mplig typ (var, let eller const). Ge variabeln valfritt namn.
+Uppgift 5 - Skapa en f�rdefinierad funktion
+Funktionen ska skapas som en funktionsdeklaration. Funktionen kommer p� sikt att anv�ndas som eventlyssnare till inputf�lten. Se avsnitt Funktioner i F�rel�sning 1 f�r mer om funktioner.
+D�p funktionen till vad ni vill, helst n�got l�mpligt f�r syftet. F�ljande ska h�nda:
+
+
+Detaljer:
+* Ta emot eventobjektet som skickas i bakgrunden n�r eventlyssnaren triggas (l�mpligen d�pt till e).
+* Anv�nda eventobjektet (e) f�r att
+o Skriv ut till konsolen vilket inputf�lt som genererade eventet (target).
+o Ta reda p� inputf�ltets (target) name-attribut. Inneh�llet i name-attributet kan l�mpligen lagras i en variabel.
+* Om name-attributet �r "content", ska inneh�llet (value) i inputf�ltet skrivas ut till div- elementet, som ni h�mtade och lagrade i en variabel i Uppgift 4, steg 4.
+o Anv�nd exempelvis egenskapen innerHTML f�r att ge div-elementet ett inneh�ll.
+Uppgift 6 Koppla eventlyssnare
+Koppla eventlyssnare till textf�lten, checkboxen och knappen. Se avsnitt Event - Eventlyssnare i F�rel�sning 3 f�r detaljer kring att koppla eventlyssnare. Avsnittet Funktioner i F�rel�sning 1 kan ocks� vara till hj�lp.
+Eventlyssnare till checkboxen
+Koppla en anonym funktion som eventlyssnare till checkboxen, som ni h�mtade och lagrade i en variabel i Uppgift 4 steg 1.
+Det som ska h�nda �r f�ljande:
+
+
+
+Detaljer:
+* Eventlyssnaren ska k�ras vid eventet "change".
+* div-elementet som avses �r det elementet som ni h�mtade och lagrade i en variabel enligt Uppgift 4, steg 4.
+* H�mta f�rgen fr�n input-f�ltets value-egenskap.
+* Notera: input-f�ltet finns redan lagrat i en samling (h�mtad och lagrad i en variabel enligt Uppgift 4, steg 2), men d�ri finns samtliga input-f�lt. Ni ska bara anv�nda ett av dem nu. V�lj sj�lva hur ni �stadkommer detta.
+* Anv�nd valfritt s�tt f�r att s�tta den upph�mtade f�rgen p� div-elementet (se avsnitt P�verka HTML via JavaScript - HTMLElement-objekt i F�rel�sning 3).
+* Notera: det spelar ingen roll om checkboxen markeras eller avmarkeras. Bakgrundsf�rgen ska �ndras oavsett l�ge hos checkboxen. Ni kan dock f�r all del testa att ha olika funktionalitet beroende p� om checkboxen blir markerad eller avmarkerad.
+Eventlyssnare till textf�lten
+Koppla en den tidigare skapade funktionen (fr�n Uppgift 5), som eventlyssnare till varje textf�lt.
+* Eventlyssnaren ska k�ras n�r n�gon skriver i f�lten eller l�mnar f�lten. V�lj sj�lv l�mpligt event att lyssna efter.
+Eventlyssnare till knappen
+Koppla en anonym funktion till knappen (h�mtad och lagrad i en variabel enligt Uppgift 4, steg 3.
+Det som ska h�nda �r f�ljande:
+
+
+Detaljer:
+* Eventlyssnaren ska k�ras vid eventet "click".
+* div-elementet som avses �r det elementet som ni h�mtade och lagrat i en variabel enligt Uppgift 4, steg 4.
+* Anv�nd valfri funktion f�r att ta bort elementet (se avsnitt P�verka HTML via JavaScript - Ta bort inneh�ll i F�rel�sning 3).
+* Notera: om ni vill testa flera g�nger f�r ni ladda om sidan s� att div- elementet kommer tillbaka.
+
+
+Inl�mning
+Nedanst�ende ska l�mnas till uppgiften m�rkt Labb 1 i kursrummet. Vidare instruktion och datumangivelser finns i kursrummet.
+Kod
+* L�mna in l�nk till GitHub-repository som skapades och lades upp p� GitHub under
+f�rberedelserna.
+o L�nken ska se ut n�got i stil med: https://github.com/[ditt-github- anv�ndarnamn]/gik339-[gruppnummer]-labb1.
+* Observera! L�mna inte in en zip:ad mapp med er kod!
+
+Loggar
+Om generativ AI har anv�nts ska ett dokument inneh�llande dokumentation om hur den anv�nts inkluderas i inl�mningen. Detta kan r�ra sig om exempelvis
+* Loggar fr�n ChatGPT eller andra chatverktyg
+* Kommandon som st�llts till GitHub Copilot och vilket svar som gavs.
+
+Video
+G�r en inspelning p� max 5 minuter. Ni ska b�da ha kameror p� och namn synliga s� att jag kan se vem som pratar (kan exempelvis uppn�s genom att anv�nda Zoom).
+I videon ska ni:
+* Demonstrera att din webbplats fungerar enligt ovanst�ende uppgiftsbeskrivningar. L�s noggrant vad det �r meningen att de olika eventlyssnarna ska fungera.
+o Ha konsolen (fliken "Console/Konsol" i DevTools) �ppet i din webbl�sare s� att det syns att interaktion med webbsidan ger �nskad output.
+o Visa att div-elementet faktiskt tas bort ur DOM-tr�det vid klick p� knappen (via fliken "Elements/Element" i DevTools).
+o B�da ska vara delaktiga i att visa och f�rklara webbsidan och output i DevTools.
+* V�lj en varsin av nedanst�ende uppgifter och f�rklara rad f�r rad hur koden fungerar. Om ni anv�nt generativ AI ska ocks� peka p� var det anv�nts och f�rklara p� vilket s�tt den f�rb�ttrar er kod.
+o Koden som skrevs i Uppgift 4
+* Motivera ocks� valet till funktion/funktioner som anv�ndes f�r att h�mta upp HTMLElement-objekten.
+o Koden som skrevs i Uppgift 5
+o Koden som skrevs i Uppgift 6
+
+
+
+
