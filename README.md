@@ -1,23 +1,21 @@
-# AI Usage Documentation
+# AI-användningsdokumentation
 
-## Overview
-This document logs the usage of AI tools during the development of this project. The primary AI tools used were:
+## Översikt
+Detta dokument loggar användningen av AI-verktyg under projektets utveckling. De primära AI-verktygen som användes var:
 - Claude 3.5 Sonnet
 
-## Interactions Log
+## Interaktionslogg
 
-### 2024-XX-XX: Initial Code Review
-**Query**: Reviewed HTML implementation against requirements
-**AI Tool**: Claude 3.5 Sonnet
-**Response Summary**: Confirmed that the HTML implementation matched all requirements:
-- Verified correct implementation of three input elements with specified attributes
-- Confirmed button element implementation
-- Validated output div element setup
+### 2024-03-XX: HTML-strukturering
+**Fråga**: Bad AI:n att hjälpa till med att strukturera HTML-filen enligt labbinstruktionerna
+**AI-verktyg**: Claude 3.5 Sonnet
+**Sammanfattning av svar**: AI:n skapade en grundläggande HTML-struktur med:
+- Tre input-element med specificerade attribut
+- En knapp för att ta bort div-elementet
+- Ett output div-element
+- Korrekt nästlade form- och container-element
 
-**Code Affected**: No changes were required as implementation was correct
-
-### [Additional Interactions...]
-[Document any other AI interactions here as they occur, following the same format]
+**Påverkad kod**: `src/index.html`
 
 ## Guidelines for Documentation
 When adding new entries:
