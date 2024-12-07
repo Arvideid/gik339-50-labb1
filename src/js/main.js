@@ -1,40 +1,40 @@
-// Hämta DOM-element som vi behöver använda
-const styleCheckbox = document.querySelector('#divStyle');
-const textFields = document.getElementsByClassName('textfield');
-const updateBtn = document.getElementById('updateButton');
-const outputElement = document.getElementsByClassName('output-div')[0];
+// Hämtar element med olika DOM-metoder
+const styleCheckbox = document.querySelector('#divStyle');        // Flexibel CSS-selektor metod
+const textFields = document.getElementsByClassName('textfield');  // Hämtar kollektion av element
+const updateBtn = document.getElementById('updateButton');        // Snabbaste metoden för ID
+const outputElement = document.querySelector('.output-div');      // Konsekvent med checkbox-metoden
 
-// Hantera ändringar i textfälten
+// Funktion som hanterar ändringar i textfält och uppdaterar output
 function handleInputChange(e) {
-    console.log('Event triggered by:', e.target);
-    console.log('Input name:', e.target.name);
+    console.log('Event triggered by:', e.target);    // Loggar vilket element som triggade eventet
+    console.log('Input name:', e.target.name);       // Loggar elementets name-attribut
 
     const inputName = e.target.name;
     
-    // Uppdatera output-divens innehåll när innehållsfältet ändras
+    // Uppdaterar innehållet endast om content-fältet ändras
     if (inputName === 'content') {
         outputElement.innerHTML = e.target.value;
     }
 }
 
-// Lyssna efter ändringar på style-checkboxen
+// Ändrar bakgrundsfärg när checkbox klickas
 styleCheckbox.addEventListener('change', () => {
-    const colorInput = document.getElementById('color');
+    const colorInput = document.getElementById('color');  // Hämtar färgfältet
     outputElement.style.backgroundColor = colorInput.value;
 });
 
-// Lägg till event listeners på alla textfält
+// Lägger till både input och blur event på textfälten
 Array.from(textFields).forEach(textField => {
-    textField.addEventListener('input', handleInputChange);
-    textField.addEventListener('blur', handleInputChange);
+    textField.addEventListener('input', handleInputChange);  // När användaren skriver
+    textField.addEventListener('blur', handleInputChange);   // När fältet lämnas
 });
 
-// Lyssna efter klick på uppdateringsknappen
+// Tar bort output-diven när knappen klickas
 updateBtn.addEventListener('click', () => {
     outputElement.remove();
 });
 
-// Logga alla viktiga element för felsökning
+// Loggar alla element för felsökning
 console.log('Elements loaded:', {
     checkbox: styleCheckbox,
     textFields: textFields,
