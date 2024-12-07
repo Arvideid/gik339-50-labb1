@@ -1,8 +1,8 @@
 // Hämtar element med olika DOM-metoder
-const styleCheckbox = document.querySelector('#divStyle');        // Flexibel CSS-selektor metod
-const textFields = document.getElementsByClassName('textfield');  // Hämtar kollektion av element
-const updateBtn = document.getElementById('updateButton');        // Snabbaste metoden för ID
-const outputElement = document.querySelector('.output-div');      // Konsekvent med checkbox-metoden
+const styleCheckbox = document.querySelector('#divStyle');        // CSS-selektor för ID
+const textFields = document.getElementsByClassName('textfield');  // Hämtar kollektion av element genom klass
+const updateBtn = document.getElementById('updateButton');        // Hämtar element genom ID
+const outputElement = document.querySelector('.output-div');      // CSS-selektor för klass
 
 // Funktion som hanterar ändringar i textfält och uppdaterar output
 function handleInputChange(e) {
