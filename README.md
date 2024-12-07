@@ -6,24 +6,46 @@ Detta dokument loggar användningen av AI-verktyg under projektets utveckling. D
 
 ## Interaktionslogg
 
-### 2024-03-XX: HTML-strukturering
-**Fråga**: Bad AI:n att hjälpa till med att strukturera HTML-filen enligt labbinstruktionerna
+### 2024-03-XX: CSS-styling förbättring
+**Fråga**: "can you improve our css styling? no animations, polished styling. use a responsive vertical layout"
 **AI-verktyg**: Claude 3.5 Sonnet
-**Sammanfattning av svar**: AI:n skapade en grundläggande HTML-struktur med:
-- Tre input-element med specificerade attribut
-- En knapp för att ta bort div-elementet
-- Ett output div-element
-- Korrekt nästlade form- och container-element
 
-**Påverkad kod**: `src/index.html`
+![CSS-styling förfrågan](./images/cssstyling.png)
 
-## Guidelines for Documentation
-When adding new entries:
-1. Include the date
-2. Specify which AI tool was used
-3. Document the query/prompt
-4. Summarize the AI's response
-5. Note any code changes that resulted from the interaction
+**Sammanfattning av svar**: AI:n förbättrade CSS-stylingen med:
+- Grundläggande reset och typografi
+- Responsiv vertikal layout
+- Polerad styling utan animationer
+- Förbättrad läsbarhet och struktur i koden
 
-## Impact on Development
-[Document how AI tools helped in the development process, any challenges they helped solve, or any limitations encountered] 
+**Påverkad kod**: `src/css/styles.css`
+
+### 2024-03-XX: Svenska JavaScript-kommentarer
+**Fråga**: "kan du lägga till kommentarer i javascript koden på svenska"
+**AI-verktyg**: Claude 3.5 Sonnet
+
+![JavaScript-kommentarer förfrågan](./images/jscomments.png)
+
+**Sammanfattning av svar**: AI:n lade till svenska kommentarer i JavaScript-koden för att förbättra kodens läsbarhet och underhållbarhet:
+- Beskrivande kommentarer för DOM-element
+- Förklaringar av eventhantering
+- Tydlig dokumentation av funktionalitet
+
+**Påverkad kod**: `src/js/main.js`
+
+## Riktlinjer för dokumentation
+Vid tillägg av nya poster:
+1. Inkludera datum
+2. Specificera vilket AI-verktyg som användes
+3. Dokumentera frågan/prompten
+4. Sammanfatta AI:ns svar
+5. Notera vilka kodändringar som resulterade från interaktionen
+
+## Påverkan på utvecklingen
+AI-verktygen har varit särskilt hjälpsamma för:
+- Initial strukturering av HTML enligt specifikationerna
+- Förbättring av CSS-styling med fokus på användbarhet och responsivitet
+- Implementering av tydliga svenska kommentarer i JavaScript-koden
+- Effektivisering av utvecklingsprocessen genom snabb feedback och kodförslag
+
+Alla AI-genererade förslag har granskats och anpassats manuellt för att säkerställa kvalitet och korrekthet. 
